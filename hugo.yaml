@@ -18,13 +18,16 @@ markup:
 
 menu:
   main:
-    - name: Docs
-      pageRef: /docs
+    - name: Blogs
+      pageRef: /blogs
+      weight: 1
+    - name: CTF Writeups  
+      pageRef: /ctf_writeups
       weight: 1
     - name: About
       pageRef: /about
       weight: 2
-    - name: Contact ↗
+    - name: Contact   
       url: "parthbadgujar57@gmail.com"
       weight: 3
     - name: Search
