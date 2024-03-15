@@ -8,7 +8,7 @@ toc: false
 
 #### Hi there 👋
 
-I am Parth Badgujar (also known as `Pegasus` or `P3g4su5`), currently 2nd Year student at IIT Roorke, intreasted in both the fields of AI and Security, currently working on Diffusion Models and AI Security at the same time pwning programs and learning low-level programming. Will keep posting intresting blogs and some CTF writeups. 
+I am Parth Badgujar (also known as `Pegasus` or `P3g4su5`), currently 2nd Year student at IIT Roorkee, intreasted in both the fields of AI and Security, currently working on `Diffusion Models` and `AI Security` at the same time learning `low-level programming`. Will keep posting intresting blogs and some CTF writeups. 
 
 Currently I am core team member of both of our campus groups :  
 1. [InfoSecIITR](https://infoseciitr.in/])
