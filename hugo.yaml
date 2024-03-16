@@ -6,6 +6,11 @@ module:
   imports:
   - path: github.com/imfing/hextra
 
+
+services:
+  googleAnalytics:
+    ID: G-RNE9BZWCYL
+
 markup:
   # allow raw html
   goldmark:
@@ -22,7 +27,7 @@ menu:
       pageRef: /blogs
       weight: 1
     - name: CTF Writeups  
-      pageRef: /ctf_writeups
+      pageRef: /ctf-writeups
       weight: 1
     - name: Contact   
       url: "parthbadgujar57@gmail.com"
