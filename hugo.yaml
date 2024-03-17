@@ -55,8 +55,8 @@ params:
       path : "images/logo.png"
 
   footer:
-    displayCopyright: false
-    displayPoweredBy: true
+    displayCopyright: true
+    displayPoweredBy: false
 
   editURL:
     enable: true
