@@ -6,7 +6,7 @@ type: docs
 
 * Difficulty : Medium
 * Description : You stumble upon a mysterious and ancient tome, said to hold the secret to vanquishing your enemies. Legends speak of its magic powers, but cautionary tales warn of the dangers of misuse.
-* Challege Files : [pwn_deathnote.zip](files/pwn_deathnote.zip)       
+* Challege Files : [pwn_deathnote.zip](https://github.com/Parth-Badgujar/Parth-Badgujar.github.io/raw/main/content/ctf-writeups/HTB%20Cyber%20Apocalypse%202024/files/pwn_deathnote.zip)       
 
 ## Initial Recon 
 
