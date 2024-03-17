@@ -6,7 +6,8 @@ type: docs
 
 * Difficulty : Medium
 * Description : You stumble upon a mysterious and ancient tome, said to hold the secret to vanquishing your enemies. Legends speak of its magic powers, but cautionary tales warn of the dangers of misuse.
-* Challege Files : [pwn_deathnote.zip](https://github.com/Parth-Badgujar/Parth-Badgujar.github.io/raw/main/content/ctf-writeups/HTB%20Cyber%20Apocalypse%202024/files/pwn_deathnote.zip)       
+* Challege Files : [pwn_deathnote.zip](https://github.com/Parth-Badgujar/Parth-Badgujar.github.io/raw/main/content/ctf-writeups/HTB%20Cyber%20Apocalypse%202024/files/pwn_deathnote.zip)    
+* Side note : This is an unintended solution, since I completely ignored this option `42. ¿?¿?¿?¿?¿?¿?` 
 
 ## Initial Recon 
 
@@ -40,6 +41,16 @@ In the challenge distributables we were given a binary, a libc and a linker. Upo
 ```  
 
 * This definetrly seemed to be a `heap` chall given these option and name of the challenge. 
+
+* It turns out, all the protections in the binary are enabled 
+```
+    Arch:     amd64-64-little
+    RELRO:    Full RELRO
+    Stack:    Canary found
+    NX:       NX enabled
+    PIE:      PIE enabled
+    RUNPATH:  b'./glibc/'
+```
 
 #### Create Entry  
 
@@ -325,6 +336,10 @@ libc_leak = u64(view(7).ljust(8, b"\x00")) - 0x21ace0
 
 log.critical(f"libc @ {hex(libc_leak)}") 
 ```    
+This is the state of heap after the above operation 
+
+![alt text](image-7.png) 
+
 
 ### Stack Leak 
 
