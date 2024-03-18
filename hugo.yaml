@@ -29,9 +29,6 @@ menu:
     - name: CTF Writeups  
       pageRef: /ctf-writeups
       weight: 1
-    - name: Contact   
-      url: "parthbadgujar57@gmail.com"
-      weight: 3
     - name: Search
       weight: 4
       params:

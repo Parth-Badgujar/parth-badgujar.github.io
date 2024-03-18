@@ -39,7 +39,7 @@ int __fastcall main(int argc, const char **argv, const char **envp)
 }
 ```
 
-* The program is simple, it clears the terminal, prints echos some statement and call `gets` on a buffer of 32 bytes 
+* The program is simple, it clears the terminal, echos some statement and call `gets` on a buffer of 32 bytes 
 
 ## Exploit 
 
@@ -52,9 +52,9 @@ int __fastcall main(int argc, const char **argv, const char **envp)
 ![ ](image-4.png)  
 
 
-* If you look closely the value in `rdi` register points to a writable section of libc, so if we execute `gets` in this state the input will be stored on that address in libc 
+* If you look closely, the value in `rdi` register points to a writable section of libc, so if we execute `gets` in this state, the input will be stored on that address in libc 
 * After the `gets` function is completed the value in `rdi` remains the same and `rip` will jump to next value on the stack 
-* So if we chain the input like 
+* So if we chain the input like :
 
 ```
 <junk bytes> + <address of gets> + <address of system>
