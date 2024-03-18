@@ -6,7 +6,7 @@ type: docs
 
 * Difficulty : Medium
 * Description : Navigate the shadows in a dimly lit room, silently evading detection as you strategize to outsmart your foes. Employ clever distractions to divert their attention, paving the way for your daring escape!  
-* Challenge Files : [](pwn_sound_of_silence.zip)
+* Challenge Files : [pwn_sound_of_silence.zip](https://github.com/Parth-Badgujar/Parth-Badgujar.github.io/raw/main/content/ctf-writeups/HTB%20Cyber%20Apocalypse%202024/files/pwn_sound_of_silence.zip)
 
 ## Initial Recon 
 
